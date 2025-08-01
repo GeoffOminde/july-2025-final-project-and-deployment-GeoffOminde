@@ -1,78 +1,29 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // Toggle menu for small screens
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
+// Simple feedback display for contact form
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
+  const feedback = document.getElementById('feedback');
 
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  }
-
-  // Form validation (contact.html only)
-  const form = document.querySelector("form");
   if (form) {
-    form.addEventListener("submit", function (e) {
-      const email = document.querySelector("#email").value;
-      if (!email.includes("@")) {
-        alert("Please enter a valid email.");
-        e.preventDefault();
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      feedback.textContent = "🌊 Thanks for reaching out! I'll ride the wave back to you soon.";
+      feedback.style.color = "#0072ff";
+      form.reset();
+    });
+  }
+
+  // Basic scroll reveal animation (fade-in)
+  const revealElements = document.querySelectorAll('.skills li, .card');
+
+  const revealOnScroll = () => {
+    const windowBottom = window.scrollY + window.innerHeight;
+    revealElements.forEach(el => {
+      const elTop = el.offsetTop;
+      if (windowBottom > elTop + 50) {
+        el.classList.add('visible');
       }
     });
-  }
+  };
 
-  // Lightbox image gallery (gallery.html only)
-  const galleryImages = document.querySelectorAll(".gallery-img");
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const closeBtn = document.querySelector(".close-btn");
-
-  if (galleryImages.length > 0 && lightbox && lightboxImg) {
-    galleryImages.forEach((img) => {
-      img.addEventListener("click", () => {
-        lightboxImg.src = img.src;
-        lightbox.style.display = "flex";
-      });
-    });
-
-    if (closeBtn) {
-      closeBtn.addEventListener("click", () => {
-        lightbox.style.display = "none";
-      });
-    }
-
-    // Optional: Close on lightbox background click
-    lightbox.addEventListener("click", (e) => {
-      if (e.target === lightbox) {
-        lightbox.style.display = "none";
-      }
-    });
-  }
-
-  // Scroll Reveal using IntersectionObserver
-  const reveals = document.querySelectorAll(".reveal");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("revealed");
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
-
-  reveals.forEach((el) => observer.observe(el));
-
-  // Optional: ScrollReveal.js integration (if loaded)
-  if (typeof ScrollReveal !== "undefined") {
-    ScrollReveal().reveal(".reveal", {
-      delay: 200,
-      distance: "50px",
-      origin: "bottom",
-      duration: 800,
-      reset: false,
-    });
-  }
+  window.addEventListener('scroll', revealOnScroll);
 });

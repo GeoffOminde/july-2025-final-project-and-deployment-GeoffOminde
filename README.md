@@ -1,25 +1,19 @@
-# Geoffrey Ominde | Portfolio Website 🌐
+# 🌊 Dev Pulse: Ocean-Themed Portfolio
 
-## 🚀 Overview
-A clean, responsive, and modern portfolio website built using HTML5, CSS3, and vanilla JavaScript.
+**Developer**: Ominde  
+**Live Vibes**: Inspired by the rhythm of the sea and powered by interactive code.
 
-## 📁 Pages
-- Home
-- About
-- Projects
-- Gallery
-- Contact (with working form validation)
+## 🚀 Features
 
-## 💡 Features
-- Mobile responsive
-- Toggle menu for small screens
-- Smooth scrolling
-- Form validation
-- Lightbox image gallery
+- Modular HTML structure with semantic layout
+- Oceanic CSS3 theme with scroll animations
+- Responsive design & interactive UI components
+- Contact form with custom feedback
+- Gallery page with grid layout
 
-## 🔗 Live Site
-[Visit the live site](https://GeoffOminde.github.io/july-2025-final-project-and-deployment-GeoffOminde)
+## 🧰 Tech Stack
 
-## 🗂️ Folder Structure
+- HTML5, CSS3, JavaScript
+- Deployed via GitHub Pages / Netlify
 
-# july-2025-final-project-and-deployment-GeoffOminde
+## 🗂️ File Structure
