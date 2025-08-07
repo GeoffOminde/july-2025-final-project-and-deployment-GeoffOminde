@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoffrey Ominde | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Geoffrey Ominde</h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                    <li><a href="#projects" class="nav-link" data-page="projects">Projects</a></li>
+                    <li><a href="#gallery" class="nav-link" data-page="gallery">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <div class="slider-container">
+                <div class="slider">
+                    <!-- Images will be injected by JS -->
+                </div>
+                <button class="slider-btn prev" aria-label="Previous slide">&lt;</button>
+                <button class="slider-btn next" aria-label="Next slide">&gt;</button>
+            </div>
+            <div class="container hero-content">
+                <h2>Innovative Web Experiences</h2>
+                <p>We build beautiful, responsive, and interactive websites from the ground up.</p>
+            </div>
+        </section>
+
+        <section id="about" class="page">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I am a passionate developer and designer dedicated to creating high-quality web applications. My mission is to leverage cutting-edge technology to solve real-world problems and deliver exceptional user experiences.</p>
+                <p>My journey began with a simple idea: to make the web a more beautiful and functional place. I believe in collaboration, innovation, and a user-centric approach to design and development. Whether it's a simple portfolio or a complex enterprise application, I bring the same level of commitment and expertise to every project.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="page">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=2000&auto=format&fit=crop" alt="Project One">
+                        <h3>Fitness Tracker App</h3>
+                        <p>A web application that helps users track their fitness goals, monitor progress, and stay motivated. Built with React and Node.js.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1516116216624-53e6973bea12?q=80&w=2000&auto=format&fit=crop" alt="Project Two">
+                        <h3>E-commerce Platform</h3>
+                        <p>An e-commerce platform for selling handmade crafts. Features a clean UI, product management, and a secure payment gateway integration.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=2000&auto=format&fit=crop" alt="Project Three">
+                        <h3>Photographer's Portfolio</h3>
+                        <p>A portfolio website for a professional photographer, featuring a custom CMS for easy gallery management and a stunning visual layout.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="page">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="https://images.unsplash.com/photo-1504208434309-cb69f4c42b1b?q=80&w=2070&auto=format&fit=crop" alt="Gallery image 1" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" alt="Gallery image 2" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop" alt="Gallery image 3" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=2070&auto=format&fit=crop" alt="Gallery image 4" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?q=80&w=1925&auto=format&fit=crop" alt="Gallery image 5" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=2070&auto=format&fit=crop" alt="Gallery image 6" class="gallery-item">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Have a project in mind? I'd love to hear from you.</p>
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="error-message" aria-live="polite"></div>
+                    </div>
+                    <button type="submit">Send Message</button>
+                    <div id="form-status" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox-container">
+        <span class="lightbox-close" role="button" aria-label="Close image view">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged gallery image">
+        <a class="lightbox-prev" role="button" aria-label="Previous image">&#10094;</a>
+        <a class="lightbox-next" role="button" aria-label="Next image">&#10095;</a>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Geoffrey Ominde. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
