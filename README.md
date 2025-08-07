@@ -71,4 +71,4 @@ This project is ready for deployment on any static hosting service.
 3.  **Configure Build Settings:**
     - **Build command:** Leave this blank (as there's no build step).
     - **Publish directory:** Leave this as the root directory.
-4.  **Deploy:** Click "Deploy site". Netlify will automatically deploy your website and provide you with a live URL.
+4.  **Deploy:** Click "Deploy site". Netlify will automatically deploy your website and provide you with a live URL.# GeoffOminde-july-2025-final-project-and-deployment-GeoffOminde
