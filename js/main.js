@@ -1,29 +1,42 @@
-// Simple feedback display for contact form
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contactForm');
-  const feedback = document.getElementById('feedback');
+/* ============================== */
+/* 🌊 Dev Pulse JavaScript Magic */
+/* ============================== */
 
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      feedback.textContent = "🌊 Thanks for reaching out! I'll ride the wave back to you soon.";
-      feedback.style.color = "#0072ff";
-      form.reset();
-    });
-  }
+// 🌟 Scroll-to-Top Button
+const scrollBtn = document.createElement('button');
+scrollBtn.textContent = '↑ Top';
+scrollBtn.classList.add('scroll-top');
+document.body.appendChild(scrollBtn);
 
-  // Basic scroll reveal animation (fade-in)
-  const revealElements = document.querySelectorAll('.skills li, .card');
-
-  const revealOnScroll = () => {
-    const windowBottom = window.scrollY + window.innerHeight;
-    revealElements.forEach(el => {
-      const elTop = el.offsetTop;
-      if (windowBottom > elTop + 50) {
-        el.classList.add('visible');
-      }
-    });
-  };
-
-  window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
 });
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ✅ Contact Form Validation
+document.querySelector('form')?.addEventListener('submit', function (e) {
+  const name = document.querySelector('#name');
+  const email = document.querySelector('#email');
+  const message = document.querySelector('#message');
+
+  if (!name.value || !email.value || !message.value) {
+    e.preventDefault();
+    alert('Please fill in all fields before submitting.');
+  }
+});
+
+// 🌀 Reveal Animations on Scroll
+const revealElements = document.querySelectorAll('.project-card, .skills-list li');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+revealElements.forEach(el => observer.observe(el));
