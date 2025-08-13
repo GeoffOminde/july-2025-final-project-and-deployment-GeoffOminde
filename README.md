@@ -1,75 +1,142 @@
-# Geoffrey Ominde | Portfolio Website
+# Geoffrey Ominde — Personal Website
 
-A clean, responsive, and modern multi-page portfolio website built using HTML5, CSS3, and vanilla JavaScript, following best practices for code organization and deployment.
+A clean, responsive three-page website built with semantic HTML5, modern CSS3, and a touch of vanilla JavaScript. The site presents Geoffrey Ominde’s professional profile as a Monitoring, Evaluation, and Learning (MEL) specialist based in Nakuru, Kenya.
 
-🚀 **[Live Site URL: YOUR_DEPLOYMENT_LINK_HERE]**
 
-## 🌐 Overview
 
-This project is a comprehensive portfolio website designed to showcase the skills, projects, and contact information of a web developer named Geoffrey Ominde. The site is built from the ground up with a focus on a clean user interface, responsive design, and smooth user experience. It functions as a single-page application (SPA) for seamless navigation without page reloads, and it is structured to be easily maintainable and deployable on modern hosting platforms.
+## Overview
 
-## 💡 Features
+- **Pages:** Home, About, Contact
+- **Tech:** HTML5, CSS3, JavaScript (no frameworks)
+- **Features:** Responsive layout, accessible navigation, mobile menu toggle, contact form UX, neutral color theme
+- **Use case:** Portfolio/resume website suitable for course submission and live deployment
 
-- **Multi-Page Layout in a Single-Page Application (SPA) architecture:** Uses JavaScript to dynamically show and hide page sections, providing fast navigation.
-- **Fully Responsive Design:** Adapts beautifully to all screen sizes, from mobile phones to desktops.
-- **Interactive Components:**
-    - **Toggle Mobile Menu:** A hamburger menu for easy navigation on small screens.
-    - **Hero Image Slider:** An automated, looping slider on the home page.
-    - **Interactive Project Cards:** Hover effects on project showcases.
-    - **Lightbox Image Gallery:** A fully functional, keyboard-navigable lightbox for viewing gallery images.
-    - **Contact Form with Validation:** Client-side validation to ensure users submit complete and correctly formatted information.
-- **Clean & Organized Code:** The codebase is organized into separate folders for styles, scripts, and assets, with clear comments for maintainability.
+---
 
-## 📁 Pages
+## Live link
 
-The website includes the following pages:
-1.  **Home:** A welcoming landing page with a hero image slider and an introduction.
-2.  **About:** A section describing the developer's background and passion.
-3.  **Projects:** A grid-based showcase of past work with links to live demos and source code.
-4.  **Gallery:** An image gallery with a lightbox for viewing high-resolution images.
-5.  **Contact:** A contact form with validation for user inquiries.
+- Add once deployed (e.g., GitHub Pages, Netlify, or Vercel):
+  - https://your-live-url.example
 
-## 🛠️ Technologies Used
+---
 
-- **HTML5:** For semantic markup and structure.
-- **CSS3:** For styling, layout (Flexbox & Grid), animations, and responsive design.
-- **Vanilla JavaScript (ES6+):** For all interactivity, including SPA routing, DOM manipulation, form validation, and the image gallery.
-- **No frameworks or libraries:** Built entirely with core web technologies.
-
-## 🗂️ Project Structure
-
-The project follows a clean and production-friendly folder structure to keep the code organized and scalable:
+## Project structure
 
 ```
-/
-├── index.html          # Main HTML file
-├── css/
-│   └── style.css       # All custom styles for the website
-├── js/
-│   └── script.js       # All JavaScript for interactivity
-└── README.md           # Project documentation
-```
+ominde-site/
+├─ index.html              # Home: headline, tagline, quick competencies
+├─ about.html              # About & detailed experience, education, skills
+├─ contact.html            # Contact details + message form
+├─ assets/
+│  ├─ css/
+│  │  └─ style.css         # Global styles, variables, responsive rules
+│  ├─ js/
+│  │  └─ main.js           # Footer year, mobile nav toggle, form UX
+│  └─ images/
+│     └─ headshot.jpg      # Profile image (replace with your own)
+└─ README.md
 
-## 🚀 Setup and Deployment
 
-This project is ready for deployment on any static hosting service.
 
-### Recommended Deployment Platforms
 
-- **GitHub Pages:** Free hosting directly from your GitHub repository.
-- **Netlify:** Powerful platform with continuous deployment, form handling, and more.
-- **Vercel:** Optimized for frontend projects, offering fast performance and easy setup.
+## Page details
 
-### Deployment Steps (Example with Netlify)
+### Home (index.html)
+- **Header:** Sticky navigation with site title and links to all pages.
+- **Hero section:** Name, tagline, location, email, phone, and CTAs. Includes a circular profile image displayed beside the headline; stacks on mobile.
+- **Highlights:** Three cards outlining MEL systems, analysis/storytelling, and partnerships.
 
-1.  **Push to GitHub:** Create a new repository on GitHub and push your project files.
-2.  **Connect to Netlify:**
-    - Sign up or log in to [Netlify](https://www.netlify.com/).
-    - Click "New site from Git".
-    - Choose GitHub and authorize access.
-    - Select your project repository.
-3.  **Configure Build Settings:**
-    - **Build command:** Leave this blank (as there's no build step).
-    - **Publish directory:** Leave this as the root directory.
-4.  **Deploy:** Click "Deploy site". Netlify will automatically deploy your website and provide you with a live URL.# GeoffOminde-july-2025-final-project-and-deployment-GeoffOminde
-# july-2025-final-project-and-deployment-GeoffOminde
+### About (about.html)
+- **Summary:** Brief biography and approach.
+- **Core competencies:** Bullet list of key MEL skills and methods.
+- **Experience:** Role-by-role highlights 
+- **Education and skills:** Academic background, tools, languages.
+- **Beyond work:** Personal note on teamwork.
+
+### Contact (contact.html)
+- **Contact details:** Email, phone, location, P.O. Box.
+- **Form:** Name, email, message with basic validation/UX via JavaScript. Mailto fallback opens the default email client.
+
+
+
+## Styling and responsiveness (assets/css/style.css)
+
+- **CSS variables:** Centralized color palette, spacing, radius, and container width.
+- **Layout:** Mobile-first design with fluid spacing, grid utilities, and readable line lengths.
+- **Components:** Cards, buttons, focus-visible states, and accessible color contrast.
+- **Responsive nav:** Converts to a toggleable menu under 720px.
+- **Hero image layout:** Two-column grid for image + text; collapses to single-column on small screens.
+
+To change colors, edit the variables in `:root`:
+```css
+:root{
+  --bg: #f5f5f5;
+  --surface: #ffffff;
+  --text: #222222;
+  --muted: #555555;
+  --accent: #0077cc;
+  --accent-dark: #005fa3;
+  --ring: #cce4f7;
+  --radius: 12px;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --maxw: 1100px;
+}
+
+
+
+
+## Interactivity (assets/js/main.js)
+
+- **Footer year:** Auto-updates the copyright.
+- **Mobile nav toggle:** ARIA-enabled button toggles the menu on small screens.
+- **Contact form UX:** Validates required fields and opens a mailto link as a simple submission fallback.
+
+
+
+## How to run locally
+
+1. Download or clone the repository.
+2. Open `index.html` in your browser (no build step needed).
+3. Replace `assets/images/headshot.jpg` with your own image if desired.
+
+
+
+## Deployment
+
+Choose one of the following:
+
+- **GitHub Pages**
+  1. Push the project to a GitHub repository.
+  2. In Repo Settings → Pages, set source to “Deploy from a branch” (main, root).
+  3. Wait for the site to go live at `https://<username>.github.io/<repo>/`.
+
+- **Netlify**
+  1. Drag-and-drop the project folder (or connect the repo) in Netlify.
+  2. Netlify auto-deploys and provides a live HTTPS URL.
+  3. Optionally set a custom domain.
+
+- **Vercel**
+  1. Import the GitHub repo into Vercel.
+  2. Framework preset: “Other”; no build command needed.
+  3. Deploy for an instant HTTPS URL and preview deployments.
+
+
+
+## Accessibility notes
+
+- Semantic landmarks: header, nav, main, footer.
+- Descriptive link text and alt text for the headshot image.
+- Visible focus styles and adequate color contrast.
+- ARIA attributes on the mobile nav toggle and form status messaging.
+
+
+
+## Credits and license
+
+- Content: © Geoffrey Okwach Ominde.
+- Code: You may reuse and adapt for educational purposes. If publishing publicly, retain attribution or add your own.
+
+
