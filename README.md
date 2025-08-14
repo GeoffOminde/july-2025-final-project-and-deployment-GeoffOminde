@@ -16,7 +16,7 @@ A clean, responsive three-page website built with semantic HTML5, modern CSS3, a
 ## Live link
 
 - Add once deployed (e.g., GitHub Pages, Netlify, or Vercel):
-  - https://your-live-url.example
+  - https://geoffominde.github.io
 
 ---
 
