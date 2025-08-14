@@ -16,7 +16,7 @@ A clean, responsive three-page website built with semantic HTML5, modern CSS3, a
 ## Live link
 
 - Add once deployed (e.g., GitHub Pages, Netlify, or Vercel):
-  - https://geoffominde.github.io
+  - https://geoffominde.github.io/july-2025-final-project-and-deployment-GeoffOminde/
 
 ---
 
