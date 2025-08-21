@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Portfolio — Acme Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Selected projects demonstrating our process and results." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Acme<span>Studio</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="portfolio.html" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="blog.html" data-nav="blog">Blog</a></li>
+          <li><a class="btn btn-small" href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Portfolio</h1>
+        <p>Case studies with outcomes, not just screenshots.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-3">
+        <article class="card portfolio-card">
+          <img src="https://picsum.photos/seed/case1/600/420" alt="SaaS dashboard" loading="lazy" />
+          <h3>Convert+ SaaS</h3>
+          <p>40% faster load times, +22% signups after redesign.</p>
+          <a class="btn btn-outline" href="#">Read Case Study</a>
+        </article>
+        <article class="card portfolio-card">
+          <img src="https://picsum.photos/seed/case2/600/420" alt="E-commerce storefront" loading="lazy" />
+          <h3>North Market</h3>
+          <p>+31% revenue from UX and performance improvements.</p>
+          <a class="btn btn-outline" href="#">Read Case Study</a>
+        </article>
+        <article class="card portfolio-card">
+          <img src="https://picsum.photos/seed/case3/600/420" alt="Nonprofit website" loading="lazy" />
+          <h3>Green Earth</h3>
+          <p>Donations up 18% via clearer messaging & flows.</p>
+          <a class="btn btn-outline" href="#">Read Case Study</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year"></span> Acme Studio.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

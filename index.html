@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Acme Studio — Modern Web Design & Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="We plan, design, build, and grow modern, fast, multipage websites." />
+  <link rel="preload" href="assets/css/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:," />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Acme Studio — Modern Web Design & Development" />
+  <meta property="og:description" content="We plan, design, build, and grow modern, fast, multipage websites." />
+  <meta property="og:type" content="website" />
+  <!-- JSON-LD (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Acme Studio",
+    "url":"https://example.com",
+    "sameAs":["https://twitter.com/example","https://www.instagram.com/example/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="Acme Studio home">Acme<span>Studio</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="portfolio.html" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="blog.html" data-nav="blog">Blog</a></li>
+          <li><a class="btn btn-small" href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container grid-2">
+        <div>
+          <h1>We build purposeful, fast, beautiful websites.</h1>
+          <p>From planning and sitemaps to wireframes, design, development, testing, launch and maintenance — all in one place.</p>
+          <div class="actions">
+            <a class="btn" href="services.html">Explore Services</a>
+            <a class="btn btn-outline" href="portfolio.html">View Work</a>
+          </div>
+        </div>
+        <div class="hero-card" role="img" aria-label="Website wireframe and design preview">
+          <img src="https://picsum.photos/seed/wireframe/640/420" alt="Wireframe preview" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Our Process (Your 10 Steps)</h2>
+        <ol class="process">
+          <li><strong>Purpose:</strong> Define audience, goals & requirements.</li>
+          <li><strong>Sitemap:</strong> Map pages & flows.</li>
+          <li><strong>Wireframes:</strong> Layout & UX first.</li>
+          <li><strong>Visual Design:</strong> Color, type, imagery.</li>
+          <li><strong>Content:</strong> Clear, SEO-friendly copy & media.</li>
+          <li><strong>Tech Stack:</strong> The right tools & frameworks.</li>
+          <li><strong>Development:</strong> Front-end & back-end build.</li>
+          <li><strong>Testing:</strong> Devices, browsers, performance.</li>
+          <li><strong>Launch:</strong> Hosting, analytics, promotion.</li>
+          <li><strong>Maintenance:</strong> Updates, security, backups.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container grid-3">
+        <div class="card">
+          <h3>Design</h3>
+          <p>Accessible, on-brand interfaces with consistent components.</p>
+        </div>
+        <div class="card">
+          <h3>Development</h3>
+          <p>Modern, responsive code with performance at the core.</p>
+        </div>
+        <div class="card">
+          <h3>Growth</h3>
+          <p>SEO, analytics, and content strategies that compound.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="grid-3">
+          <article class="portfolio-item">
+            <img src="https://picsum.photos/seed/work1/600/420" alt="Marketing site screenshot" loading="lazy" />
+            <h3>Marketing Site</h3>
+            <p>High-converting landing pages with crisp messaging.</p>
+          </article>
+          <article class="portfolio-item">
+            <img src="https://picsum.photos/seed/work2/600/420" alt="E-commerce site screenshot" loading="lazy" />
+            <h3>E-commerce</h3>
+            <p>Fast product pages, smooth checkout, scalable structure.</p>
+          </article>
+          <article class="portfolio-item">
+            <img src="https://picsum.photos/seed/work3/600/420" alt="Portfolio site screenshot" loading="lazy" />
+            <h3>Portfolio</h3>
+            <p>Elegant showcases for creators & teams.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to start?</h2>
+        <p>Tell us about your goals and we’ll map the best path.</p>
+        <a class="btn btn-inverse" href="contact.html">Get a Free Consult</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html">Acme<span>Studio</span></a>
+        <p>Modern web design & development. Built with accessibility and performance in mind.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul class="footer-links">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Twitter">Twitter</a></li>
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year"></span> Acme Studio. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

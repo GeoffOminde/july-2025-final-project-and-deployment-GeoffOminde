@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>About — Acme Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Learn about our team, mission and approach to building purposeful websites." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Acme<span>Studio</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="portfolio.html" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="blog.html" data-nav="blog">Blog</a></li>
+          <li><a class="btn btn-small" href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>We blend strategy, design, and engineering to ship websites that perform.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Mission & Vision</h2>
+          <p>Our mission is to help teams communicate clearly and convert confidently. We envision a web where speed, accessibility, and craft are the default.</p>
+          <ul class="checklist">
+            <li>Accessibility-first approach (WCAG-aware)</li>
+            <li>Performance budgets baked into builds</li>
+            <li>Content design that respects attention</li>
+          </ul>
+        </div>
+        <div>
+          <img src="https://picsum.photos/seed/team/640/420" alt="Our team collaborating" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>Our Team</h2>
+        <div class="grid-3 cards-people">
+          <article class="card person">
+            <img src="https://picsum.photos/seed/alex/400/400" alt="Alex, Design Lead" loading="lazy" />
+            <h3>Alex Kim</h3><p>Design Lead</p>
+          </article>
+          <article class="card person">
+            <img src="https://picsum.photos/seed/jordan/400/400" alt="Jordan, Engineering Lead" loading="lazy" />
+            <h3>Jordan Lee</h3><p>Engineering Lead</p>
+          </article>
+          <article class="card person">
+            <img src="https://picsum.photos/seed/sam/400/400" alt="Sam, Content Strategist" loading="lazy" />
+            <h3>Sam Patel</h3><p>Content Strategist</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year"></span> Acme Studio.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

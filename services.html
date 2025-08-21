@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Services — Acme Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore web design, development, and growth services." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Acme<span>Studio</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="portfolio.html" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="blog.html" data-nav="blog">Blog</a></li>
+          <li><a class="btn btn-small" href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Services</h1>
+        <p>From discovery to deployment — choose a track or a full journey.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-3">
+        <article class="card service">
+          <h3>Discovery & Strategy</h3>
+          <ul class="checklist">
+            <li>Stakeholder interviews</li>
+            <li>Audience & goals definition</li>
+            <li>Sitemap & user flows</li>
+          </ul>
+        </article>
+        <article class="card service">
+          <h3>Design & Content</h3>
+          <ul class="checklist">
+            <li>Wireframes & prototypes</li>
+            <li>Visual systems & components</li>
+            <li>Copywriting & SEO</li>
+          </ul>
+        </article>
+        <article class="card service">
+          <h3>Development & QA</h3>
+          <ul class="checklist">
+            <li>Responsive front-end</li>
+            <li>CMS or headless setup</li>
+            <li>Testing & performance</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>Packages</h2>
+        <div class="grid-3 pricing">
+          <div class="card price">
+            <h3>Starter</h3>
+            <p class="price-tag">$</p>
+            <ul>
+              <li>Up to 5 pages</li>
+              <li>Basic SEO</li>
+              <li>Email support</li>
+            </ul>
+            <a class="btn" href="contact.html">Choose Starter</a>
+          </div>
+          <div class="card price featured">
+            <h3>Pro</h3>
+            <p class="price-tag">$$</p>
+            <ul>
+              <li>Up to 12 pages</li>
+              <li>Blog/CMS setup</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn btn-inverse" href="contact.html">Choose Pro</a>
+          </div>
+          <div class="card price">
+            <h3>Scale</h3>
+            <p class="price-tag">$$$</p>
+            <ul>
+              <li>Unlimited pages</li>
+              <li>Custom features</li>
+              <li>Dedicated team</li>
+            </ul>
+            <a class="btn" href="contact.html">Choose Scale</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year"></span> Acme Studio.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

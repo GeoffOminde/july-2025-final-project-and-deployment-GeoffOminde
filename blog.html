@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Blog — Acme Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Articles on planning, design systems, performance, SEO, and more." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Acme<span>Studio</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="services.html" data-nav="services">Services</a></li>
+          <li><a href="portfolio.html" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="blog.html" data-nav="blog">Blog</a></li>
+          <li><a class="btn btn-small" href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Blog</h1>
+        <p>Ideas, playbooks, and practical guides for shipping better websites.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-3">
+        <article class="card post">
+          <h3><a href="#">How to Plan a Winning Sitemap</a></h3>
+          <p class="meta">5 min read · UX Strategy</p>
+          <p>Turn business goals into clear navigation and flows that convert.</p>
+        </article>
+        <article class="card post">
+          <h3><a href="#">Wireframes that Reduce Rework</a></h3>
+          <p class="meta">7 min read · Design</p>
+          <p>Structure first, style second: collaborate faster with solid blueprints.</p>
+        </article>
+        <article class="card post">
+          <h3><a href="#">Performance Budgets 101</a></h3>
+          <p class="meta">6 min read · Engineering</p>
+          <p>Ship speedy pages with guardrails that keep things snappy.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year"></span> Acme Studio.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
